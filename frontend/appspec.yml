@@ -6,8 +6,10 @@ phases:
       - pip install -r frontend/requirements.txt || true
   build:
     commands:
-      - echo Build complete
+      - echo Preparing files for deployment...
+      - ls -la frontend/
 artifacts:
   files:
-    - "**/*"
-  base-directory: frontend
+    - '**/*'
+  base-directory: 'frontend'
+  discard-paths: no
