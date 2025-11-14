@@ -253,8 +253,7 @@ Make a small change to test automatic deployment:
 
 ```bash
 cd ..
-notepad frontend/app.py =>  search for lightblue and change it to another color. (eg. green)
-git add .
+git add frontend/app.py infra/main.tf
 git commit -m "Test pipeline"
 git push origin main
 ```
@@ -296,7 +295,7 @@ Try it:
 ```bash
 # Edit frontend/app.py - change some text
 notepad frontend/app.py =>  search for lightblue and change it to another color. (eg. green)
-git add frontend/app.py infra/main.tf
+git add frontend/app.py
 git commit -m "Update app"
 git push origin main
 ```
