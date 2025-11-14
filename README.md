@@ -46,6 +46,8 @@ sudo apt-get update
 sudo apt-get install terraform
 ```
 
+**Notes**!!!: To make things simpler I recommend to use scoop for installing terraform and git (or anything on windows if available on scoop) https://scoop.sh/#/
+
 ### 1.2 Install Git (if not already installed)
 
 **Windows:** Download from https://git-scm.com/download/win
@@ -231,7 +233,7 @@ terraform apply
 Terraform created a connection, but you must approve it manually.
 
 1. Go to AWS Console: https://console.aws.amazon.com
-2. Search for **Developer Tools** → **Connections**
+2. Search for **CodePipeline** → **Settings** → **Connections**
 3. Find `12-weeks-aws-github-con-2025`
 4. Status will show **Pending**
 5. Click on it, then click **Update pending connection**
